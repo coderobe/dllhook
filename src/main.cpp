@@ -4,12 +4,6 @@
 //Console instance
 Console* console;
 
-//Dynamic return address(s) set in thread, used in naked hook(s)
-DWORD g_HookFuncReturnAddress = NULL;
-
-//Dynamic ptr(s) obtained in the naked hook(s) and used in the local thread
-DWORD g_HookVarPtr = NULL;
-
 //Forward declarations
 void hookHelloWorld(byte*);
 
